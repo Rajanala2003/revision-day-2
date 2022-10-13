@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+string isPalindrome(string S)
+{
+    string P = S;
+    reverse(P.begin(), P.end());
+    if (S == P)
+    {
+        return "Yes POLINDROME";
+    }
+    else
+    {
+        return "Not polindrome";
+    }
+}
+int main()
+{
+    string S = "malayalam";
+    cout << isPalindrome(S);
+ 
+    return 0;
+}
